@@ -1,4 +1,4 @@
-include "shell.h"
+#include "shell.h"
 
 /**
 * append_path - it adds path to command
@@ -37,7 +37,7 @@ char *append_path(char *path, char *command)
 	while (command[g])
 	{
 		buf[k + g] = command[g];
-		j++;
+		g++;
 	}
 	buf[k + g] = '\0';
 
