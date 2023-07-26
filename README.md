@@ -96,5 +96,4 @@ Usage: simple_shell [filename]
 The file contains all the commands that your shell should run before exiting
 The file should contain one command per line
 In this mode, the shell should not print a prompt and should not read from stdin
-Your shell can take a file as a command line argument
-
+Your shell can take a file as a command line argumentd
