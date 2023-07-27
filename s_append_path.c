@@ -15,10 +15,8 @@ char *append_path(char *path, char *command)
 
 	if (command == 0)
 		command = "";
-
 	if (path == 0)
 		path = "";
-
 	buf = malloc(sizeof(char) * (_strlen(path) + _strlen(command) + 2));
 	if (!buf)
 		return (NULL);
@@ -34,6 +32,7 @@ char *append_path(char *path, char *command)
 		buf[k] = '/';
 		k++;
 	}
+
 	while (command[g])
 	{
 		buf[k + g] = command[g];
